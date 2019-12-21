@@ -34,29 +34,29 @@ body > div[class="background"] {
   background: linear-gradient(
       45deg,
       transparent 45%,
-      #ffffff 45%,
-      #ffffff 55%,
+      white 45%,
+      white 55%,
       transparent 55%
     ),
     linear-gradient(
       90deg,
       transparent 43%,
-      #ffffff 43%,
-      #ffffff 57%,
+      white 43%,
+      white 57%,
       transparent 57%
     ),
     linear-gradient(
       135deg,
       transparent 45%,
-      #ffffff 45%,
-      #ffffff 55%,
+      white 45%,
+      white 55%,
       transparent 55%
     ),
     linear-gradient(
       180deg,
       transparent 43%,
-      #ffffff 43%,
-      #ffffff 57%,
+      white 43%,
+      white 57%,
       transparent 57%
     );
   animation: fall 4.5s infinite normal;
