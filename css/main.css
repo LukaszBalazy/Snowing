@@ -1,0 +1,166 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+body > div[class="background"] {
+  height: 100%;
+  background: linear-gradient(#3e82f0, white 95% 100%);
+}
+
+.background > .flakes {
+  height: 100%;
+}
+
+@keyframes fall {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 100% 100%;
+    top: 0%;
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    transform: rotate(90deg);
+    opacity: 1;
+    top: 80%;
+  }
+}
+
+.background > .flakes > div {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(
+      45deg,
+      transparent 45%,
+      #ffffff 45%,
+      #ffffff 55%,
+      transparent 55%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 43%,
+      #ffffff 43%,
+      #ffffff 57%,
+      transparent 57%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 45%,
+      #ffffff 45%,
+      #ffffff 55%,
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 43%,
+      #ffffff 43%,
+      #ffffff 57%,
+      transparent 57%
+    );
+  animation: fall 4.5s infinite normal;
+}
+
+.background > .flakes > div:nth-of-type() {
+  width: 48px;
+  height: 48px;
+}
+.background > .flakes > div:nth-of-type(6n + 1) {
+  width: 40px;
+  height: 40px;
+}
+.background > .flakes > div:nth-of-type(6n + 2) {
+  width: 32px;
+  height: 32px;
+}
+.background > .flakes > div:nth-of-type(6n + 3) {
+  width: 24px;
+  height: 24px;
+}
+.background > .flakes > div:nth-of-type(6n + 4) {
+  width: 16px;
+  height: 16px;
+}
+.background > .flakes > div:nth-of-type(6n + 5) {
+  width: 8px;
+  height: 8px;
+}
+
+.background > .flakes > div:nth-of-type(7n) {
+  opacity: 0.25;
+}
+.background > .flakes > div:nth-of-type(7n + 1) {
+  opacity: 0.36;
+}
+.background > .flakes > div:nth-of-type(7n + 2) {
+  opacity: 0.41;
+}
+.background > .flakes > div:nth-of-type(7n + 3) {
+  opacity: 0.53;
+}
+.background > .flakes > div:nth-of-type(7n + 4) {
+  opacity: 0.66;
+}
+.background > .flakes > div:nth-of-type(7n + 5) {
+  opacity: 0.74;
+}
+.background > .flakes > div:nth-of-type(7n + 6) {
+  opacity: 0.87;
+}
+
+.background > .flakes > div:nth-of-type(8n + 1) {
+  animation-timing-function: ease;
+}
+.background > .flakes > div:nth-of-type(8n + 4) {
+  animation-timing-function: ease-in-out;
+}
+.background > .flakes > div:nth-of-type(8n + 5) {
+  animation-timing-function: ease-out;
+}
+.background > .flakes > div:nth-of-type(8n + 7) {
+  animation-timing-function: cubic-bezier(0.1, 0.3, 0.7, 0.9);
+}
+
+.background > .flakes > div:nth-of-type(9n) {
+  animation-duration: 2.1s;
+  animation-delay: 0.2s;
+}
+.background > .flakes > div:nth-of-type(9n + 1) {
+  animation-duration: 2.6s;
+  animation-delay: 0.7s;
+}
+.background > .flakes > div:nth-of-type(9n + 2) {
+  animation-duration: 3.4s;
+  animation-delay: 1.2s;
+}
+.background > .flakes > div:nth-of-type(9n + 3) {
+  animation-duration: 3.9s;
+  animation-delay: 1.6s;
+}
+.background > .flakes > div:nth-of-type(9n + 4) {
+  animation-duration: 4.4s;
+  animation-delay: 2.3s;
+}
+.background > .flakes > div:nth-of-type(9n + 5) {
+  animation-duration: 2.2s;
+  animation-delay: 3s;
+}
+.background > .flakes > div:nth-of-type(9n + 6) {
+  animation-duration: 5.2s;
+  animation-delay: 3.3s;
+}
+.background > .flakes > div:nth-of-type(9n + 7) {
+  animation-duration: 5.9s;
+  animation-delay: 4.1s;
+}
+.background > .flakes > div:nth-of-type(9n + 8) {
+  animation-duration: 4.3s;
+  animation-delay: 4.9s;
+}
